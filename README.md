@@ -1,9 +1,17 @@
-# INFORME TÉCNICO
 
-## Aprendizaje No Supervisado aplicado a Indicadores Educativos Globales UNESCO
+## Maestría en Inteligencia Artificial
+Aprendizaje Automático — Modelos No Supervisados | Grupo Nº 5 · 2025
 
-**Maestría en Inteligencia Artificial** | Aprendizaje Automático — Modelos No Supervisados | Grupo Nº 5 · 2025
+![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-latest-orange.svg)
+![Estado](https://img.shields.io/badge/status-completado-success.svg)
+---
 
+## 👤 Equipo de Trabajo
+- **Harold Rodrigo Angulo Arellano**
+- **Melissa Figallo Sánchez**
+- **Jorge Javier Maldonado Mahauad**
+- **Paula Elizabeth Noboa Ramírez**
 ---
 
 ### Pregunta de investigación
@@ -14,7 +22,7 @@
 
 ---
 
-## Resumen Ejecutivo
+## Resumen
 
 Este informe presenta un análisis comparativo de cuatro métodos de aprendizaje no supervisado aplicados a datos de matrícula escolar de 207 países, provenientes del Instituto de Estadística de la UNESCO. Los resultados muestran que existen grupos naturales y bien diferenciados en los sistemas educativos globales, siendo el nivel de cobertura de la educación secundaria la principal dimensión que separa a los países.
 
@@ -307,5 +315,3 @@ Se seleccionó **perplexity=30** (recomendación estándar de los autores origin
 - Rousseeuw, P. J. (1987). Silhouettes: A graphical aid to the interpretation and validation of cluster analysis. *Journal of Computational and Applied Mathematics*, 20, 53–65.
 
 ---
-
-**Fin del Informe Técnico**
