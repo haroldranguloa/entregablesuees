@@ -1,6 +1,6 @@
 
 ## Maestría en Inteligencia Artificial
-Aprendizaje Automático — Modelos No Supervisados | Grupo Nº 5 · 2025
+Aprendizaje Automático — Modelos No Supervisados | Grupo Nº 5 · 2026
 
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)
 ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-latest-orange.svg)
