@@ -26,7 +26,7 @@ Aprendizaje Automático — Modelos No Supervisados | Grupo Nº 5 · 2026
 
 ### Descripción del problema
 
-> La educación es uno de los indicadores más representativos del nivel de desarrollo de una sociedad. Sin embargo, comparar sistemas educativos entre países es un reto complejo: las diferencias culturales, económicas y geográficas producen patrones de matrícula muy distintos entre regiones. En este contexto, las técnicas de aprendizaje no supervisado ofrecen una herramienta poderosa: permiten descubrir agrupaciones naturales en los datos sin necesidad de definir etiquetas o categorías a priori.
+La educación es uno de los indicadores más representativos del nivel de desarrollo de una sociedad. Sin embargo, comparar sistemas educativos entre países es un reto complejo: las diferencias culturales, económicas y geográficas producen patrones de matrícula muy distintos entre regiones. En este contexto, las técnicas de aprendizaje no supervisado ofrecen una herramienta poderosa: permiten descubrir agrupaciones naturales en los datos sin necesidad de definir etiquetas o categorías a priori.
 
 El presente informe aplica cuatro métodos complementarios —K-Means, DBSCAN, PCA y t-SNE— sobre indicadores educativos de la UNESCO para responder a la pregunta: ¿Es posible identificar grupos naturales de países con perfiles educativos similares, y cómo difieren los patrones encontrados según el método de aprendizaje no supervisado utilizado? 
 
