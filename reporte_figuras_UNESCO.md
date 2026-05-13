@@ -7,16 +7,16 @@ https://github.com/haroldranguloa/entregablesuees/tree/main/Imagenes
 
 | Título | Descripción de la Imagen |
 |--------|--------------------------|
-| **EDA — Distribuciones y Atípicos por Nivel Educativo y Género** | Seis paneles: histogramas con curvas KDE (fila superior) y diagramas de caja con outliers (fila inferior) para Primaria, Secundaria Baja y Secundaria Alta, desagregados por hombres y mujeres. |
+| **EDA Distribuciones y Atípicos por Nivel Educativo y Género** | Seis paneles: histogramas con curvas KDE (fila superior) y diagramas de caja con outliers (fila inferior) para Primaria, Secundaria Baja y Secundaria Alta, desagregados por hombres y mujeres. |
 | **Correlación de Pearson entre Features / Primaria vs. Secundaria Alta por Género** | Panel izquierdo: matriz de correlación de Pearson entre las 6 variables educativas. Panel derecho: dispersión de Tasa de Matrícula Primaria vs. Secundaria Alta distinguiendo hombres (círculos) y mujeres (triángulos). |
 | **Selección del número óptimo de clusters para K-Means** | Dos gráficos: Método del Codo (Elbow) que marca k=4 como punto de inflexión, y Silhouette Score que identifica k=2 como el valor con mayor puntuación (~0.50). |
-| **K-Means — Visualización de Clusters** | Panel izquierdo: dispersión de países en espacio PCA 2D coloreados por cluster K-Means (k=2) con centroides marcados. Panel derecho: gráfico de radar (spider chart) con el perfil normalizado de cada cluster en las 6 variables. |
-| **K-Distance Graph — Selección de eps para DBSCAN** | Curva de distancia al 7.º vecino más cercano ordenada de mayor a menor, con eps sugerido ≈ 3.2 (línea discontinua azul) para min_samples=7. |
-| **DBSCAN — Clusters y Perfiles Educativos** | Panel izquierdo: clusters DBSCAN (eps=1.1, ms=5) en espacio PCA 2D con puntos de ruido (-1) marcados con ×. Panel derecho: gráfico de barras del perfil medio por cluster en las 6 variables educativas. |
-| **PCA — Estructura de Varianza y Loadings** | Tres subgráficos: varianza explicada por componente (PC1=62.3%, PC2=29.0%), varianza acumulada con umbrales 80% y 90%, y biplot de contribución de variables a PC1 y PC2. |
-| **PCA — Posicionamiento de países y clusters** | Panel izquierdo: mapa PCA 2D de países coloreado por cluster K-Means con etiquetas de casos extremos. Panel derecho: ranking horizontal de países extremos en PC1 (desarrollo educativo general). |
-| **t-SNE — Impacto de la perplejidad** | Tres proyecciones t-SNE (perplexity=10, 30, 50) coloreadas por asignación K-Means, mostrando cómo varía la separación y compacidad de los clusters al cambiar el hiperparámetro. |
-| **t-SNE — Validación visual de estructuras de clustering** | Dos proyecciones t-SNE (perp=30): panel izquierdo coloreado por K-Means (k=2) y panel derecho coloreado por DBSCAN (eps=1.1, ms=5), para comparar la coherencia visual de ambos métodos. |
+| **K-Means Visualización de Clusters** | Panel izquierdo: dispersión de países en espacio PCA 2D coloreados por cluster K-Means (k=2) con centroides marcados. Panel derecho: gráfico de radar (spider chart) con el perfil normalizado de cada cluster en las 6 variables. |
+| **K-Distance Graph Selección de eps para DBSCAN** | Curva de distancia al 7.º vecino más cercano ordenada de mayor a menor, con eps sugerido ≈ 3.2 (línea discontinua azul) para min_samples=7. |
+| **DBSCAN Clusters y Perfiles Educativos** | Panel izquierdo: clusters DBSCAN (eps=1.1, ms=5) en espacio PCA 2D con puntos de ruido (-1) marcados con ×. Panel derecho: gráfico de barras del perfil medio por cluster en las 6 variables educativas. |
+| **PCA Estructura de Varianza y Loadings** | Tres subgráficos: varianza explicada por componente (PC1=62.3%, PC2=29.0%), varianza acumulada con umbrales 80% y 90%, y biplot de contribución de variables a PC1 y PC2. |
+| **PCA Posicionamiento de países y clusters** | Panel izquierdo: mapa PCA 2D de países coloreado por cluster K-Means con etiquetas de casos extremos. Panel derecho: ranking horizontal de países extremos en PC1 (desarrollo educativo general). |
+| **t-SNE Impacto de la perplejidad** | Tres proyecciones t-SNE (perplexity=10, 30, 50) coloreadas por asignación K-Means, mostrando cómo varía la separación y compacidad de los clusters al cambiar el hiperparámetro. |
+| **t-SNE Validación visual de estructuras de clustering** | Dos proyecciones t-SNE (perp=30): panel izquierdo coloreado por K-Means (k=2) y panel derecho coloreado por DBSCAN (eps=1.1, ms=5), para comparar la coherencia visual de ambos métodos. |
 | **Comparativa de los 4 Métodos No Supervisados** | Panel 2×2: K-Means (k=2) en PCA 2D, DBSCAN en PCA 2D, PCA Biplot (91% varianza explicada) y t-SNE (perp=30 coloreado por K-Means), todos en el mismo espacio visual para facilitar la comparación. |
 
 ---
@@ -25,7 +25,7 @@ https://github.com/haroldranguloa/entregablesuees/tree/main/Imagenes
 
 ---
 
-### Figura 1 — EDA: Distribuciones y Atípicos por Nivel Educativo y Género
+### Figura 1: EDA Distribuciones y Atípicos por Nivel Educativo y Género
 
 **Descripción**
 
@@ -40,7 +40,7 @@ La figura presenta un análisis exploratorio de datos (EDA) organizado en dos fi
 
 ---
 
-### Figura 2 — Correlación de Pearson y Dispersión Primaria vs. Secundaria Alta
+### Figura 2: Correlación de Pearson y Dispersión Primaria vs. Secundaria Alta
 
 **Descripción**
 
@@ -55,7 +55,7 @@ El panel izquierdo es una matriz de correlación de Pearson triangular inferior 
 
 ---
 
-### Figura 3 — Selección del Número Óptimo de Clusters para K-Means
+### Figura 3: Selección del Número Óptimo de Clusters para K-Means
 
 **Descripción**
 
@@ -69,7 +69,7 @@ Dos gráficos de línea: el Método del Codo (izquierda) muestra la inercia (sum
 
 ---
 
-### Figura 4 — K-Means: Visualización de Clusters
+### Figura 4: K-Means Visualización de Clusters
 
 **Descripción**
 
@@ -84,7 +84,7 @@ Panel izquierdo: mapa de dispersión de países en el espacio PCA 2D (PC1 explic
 
 ---
 
-### Figura 5 — K-Distance Graph: Selección de eps para DBSCAN
+### Figura 5: K-Distance Graph Selección de eps para DBSCAN
 
 **Descripción**
 
@@ -98,7 +98,7 @@ Gráfico de línea que muestra la distancia al 7.º vecino más cercano (eje Y) 
 
 ---
 
-### Figura 6 — DBSCAN: Clusters y Perfiles Educativos
+### Figura 6: DBSCAN Clusters y Perfiles Educativos
 
 **Descripción**
 
@@ -114,7 +114,7 @@ Panel izquierdo: proyección en espacio PCA 2D de los clusters identificados por
 
 ---
 
-### Figura 7 — PCA: Estructura de Varianza y Loadings
+### Figura 7: PCA Estructura de Varianza y Loadings
 
 **Descripción**
 
@@ -131,7 +131,7 @@ Tres subgráficos: (1) gráfico de barras de varianza explicada por componente p
 
 ---
 
-### Figura 8 — PCA: Posicionamiento de Países y Clusters
+### Figura 8: PCA Posicionamiento de Países y Clusters
 
 **Descripción**
 
@@ -147,7 +147,7 @@ Panel izquierdo: mapa PCA 2D de todos los países coloreados por su cluster K-Me
 
 ---
 
-### Figura 9 — t-SNE: Impacto de la Perplejidad
+### Figura 9: t-SNE Impacto de la Perplejidad
 
 **Descripción**
 
@@ -162,7 +162,7 @@ Tres proyecciones t-SNE del mismo conjunto de datos con perplexity=10, 30 y 50, 
 
 ---
 
-### Figura 10 — t-SNE: Validación Visual de Estructuras de Clustering
+### Figura 10: t-SNE Validación Visual de Estructuras de Clustering
 
 **Descripción**
 
@@ -177,7 +177,7 @@ Dos proyecciones t-SNE (perp=30) del mismo espacio de datos: la izquierda colore
 
 ---
 
-### Figura 11 — Comparativa de los 4 Métodos No Supervisados
+### Figura 11: Comparativa de los 4 Métodos No Supervisados
 
 **Descripción**
 
@@ -192,4 +192,4 @@ Panel 2×2 que consolida los cuatro métodos en un único espacio visual: K-Mean
 
 ---
 
-*Reporte generado a partir del análisis no supervisado de datos educativos UNESCO.*
+*Reporte de imagenes generado a partir del análisis no supervisado de datos educativos UNESCO. Realizado por el grupo5 en la materia de ML*
