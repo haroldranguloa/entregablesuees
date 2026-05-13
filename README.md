@@ -14,13 +14,56 @@ Aprendizaje Automático — Modelos No Supervisados | Grupo Nº 5 · 2026
 - **Paula Elizabeth Noboa Ramírez**
 ---
 
-### Pregunta de investigación
+## 📋 Tabla de Contenidos
+1. [Descripción del Problema](#-dataset)
+2. [Metodología](#-dataset)
+3. [Modelos Implementados](#-dataset)
+4. [Resultados Clave](#-dataset)
+5. [Dataset](#-dataset)
+6. [Licencia](#-dataset)
+---
 
-> *¿Es posible identificar grupos naturales de países con perfiles educativos similares, y cómo difieren los patrones encontrados según el método de aprendizaje no supervisado utilizado?*
 
-**Fuente de datos:** UNESCO Institute for Statistics (UIS) | **Cobertura:** 210 países · 2000–2022 | **Modelos:** K-Means · DBSCAN · PCA · t-SNE
+### Descripción del problema
+
+> La educación es uno de los indicadores más representativos del nivel de desarrollo de una sociedad. Sin embargo, comparar sistemas educativos entre países es un reto complejo: las diferencias culturales, económicas y geográficas producen patrones de matrícula muy distintos entre regiones. En este contexto, las técnicas de aprendizaje no supervisado ofrecen una herramienta poderosa: permiten descubrir agrupaciones naturales en los datos sin necesidad de definir etiquetas o categorías a priori.
+
+El presente informe aplica cuatro métodos complementarios —K-Means, DBSCAN, PCA y t-SNE— sobre indicadores educativos de la UNESCO para responder a la pregunta: ¿Es posible identificar grupos naturales de países con perfiles educativos similares, y cómo difieren los patrones encontrados según el método de aprendizaje no supervisado utilizado? 
 
 ---
+
+## ⚙️ Metodología
+El flujo de trabajo sigue las mejores prácticas de Ciencia de Datos:
+1. **Análisis Exploratorio (EDA):** Limpieza y tratamiento de datos faltantes (UNESCO UIS).
+2. **Preprocesamiento:** Transformación de formato largo a ancho (pivotado por País-Año).
+3. **Ingeniería de Características:** Creación de variables de contexto histórico para evitar fugas de datos.
+4. **Modelado:** Entrenamiento de 4 modelos de clasificación no supervisada: K-Means · DBSCAN · PCA · t-SNE
+5. **Evaluación:** Comparación mediante métricas de AUC-ROC, F1-Score y precisión.
+
+---  
+
+## 🤖 Modelos Implementados
+Comparamos el rendimiento de los siguientes algoritmos:
+* **Decision Tree**
+* **SVM (Linear & SVC)**
+* **Random Forest** (Modelo recomendado)
+* **Regresión Logística**
+* **KNN**
+* **Naive Bayes**
+* **XGBoost**
+
+---
+
+## 📊 Resultados Clave
+El modelo **Random Forest** demostró ser el más eficaz para la implementación.
+* **AUC-ROC:** ~0.86
+* **Interpretabilidad:** Alta, gracias a la importancia de las *features* integradas.
+* **Robustez:** Excelente manejo de *outliers* y distribuciones no normales presentes en los indicadores globales.
+
+> *Nota: Se recomienda utilizar el cuaderno `Grupo nro 5.ipynb` para visualizar los gráficos de importancia de variables y las curvas ROC.*
+
+---
+
 
 ## Resumen
 
@@ -297,12 +340,28 @@ Se seleccionó **perplexity=30** (recomendación estándar de los autores origin
 - PCA asume relaciones lineales
 - Solo 6 variables educativas (sin PISA, inversión pública)
 
-**Trabajo futuro:**
-- Hierarchical Clustering para explorar subestructuras
-- Gaussian Mixture Models (clusters elípticos)
-- Integración de datos socioeconómicos (PIB, IDH)
-- Análisis temporal de evolución de clusters (2000–2022)
-- Análisis detallado de los 31 outliers de DBSCAN
+---
+
+## Sobre el dataset datos_educativos.csv
+
+El dataset datos_educativos.csv, contiene información educativa que incluye tasas de matrícula. Está estructurado con registros para diferentes países, años y tipos de datos educativos, junto con la tasa correspondiente y la fuente de los datos.
+
+Origen: Los datos fueron recolectados del archivo datos_educativos.csv.
+
+Documentación del Dataset de Datos Educativos de la ONU
+
+https://www.kaggle.com/datasets/isabelocastillo/datos-educativos-globales/data
+
+Variables Disponibles: Las variables disponibles en el dataset original son:
+- Índice: Un identificador numérico de fila.
+- ID: Un identificador numérico.
+- País: La variable categórica que representa el país.
+- Año: El año del registro de la tasa.
+- Tipo de Dato Educativo: La categoría específica de la tasa educativa (ej. Tasa Matrícula Primaria (Mujeres)).
+- Tasa: El valor numérico de la tasa educativa.
+- Fuente Datos: La fuente de donde se obtuvo el dato educativo.
+
+---
 
 
 ## ⚖️ Licencia
