@@ -304,14 +304,10 @@ Se seleccionó **perplexity=30** (recomendación estándar de los autores origin
 - Análisis temporal de evolución de clusters (2000–2022)
 - Análisis detallado de los 31 outliers de DBSCAN
 
----
 
-## 10. Referencias
+## ⚖️ Licencia
+Este proyecto se distribuye bajo la licencia MIT. 
 
-- UNESCO Institute for Statistics (UIS). (2023). UNESCO statistics database. Montreal: UNESCO.
-- Pedregosa, F. et al. (2011). Scikit-learn: Machine Learning in Python. *Journal of Machine Learning Research*, 12, 2825–2830.
-- Ester, M., Kriegel, H. P., Sander, J., & Xu, X. (1996). A density-based algorithm for discovering clusters in large spatial databases with noise. *Proceedings of KDD*, 96(34), 226–231.
-- van der Maaten, L., & Hinton, G. (2008). Visualizing data using t-SNE. *Journal of Machine Learning Research*, 9, 2579–2605.
-- Rousseeuw, P. J. (1987). Silhouettes: A graphical aid to the interpretation and validation of cluster analysis. *Journal of Computational and Applied Mathematics*, 20, 53–65.
+*Fuente de datos: UNESCO Institute for Statistics (UIS) — último acceso: abril 2023.*
 
 ---
