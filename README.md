@@ -18,9 +18,10 @@ Aprendizaje Automático — Modelos No Supervisados | Grupo Nº 5 · 2026
 1. [Descripción del Problema](#-dataset)
 2. [Metodología](#-dataset)
 3. [Modelos Implementados](#-dataset)
-4. [Resultados Clave](#-dataset)
-5. [Dataset](#-dataset)
-6. [Licencia](#-dataset)
+4. [Comparativa de Métricas](#-dataset)
+5. [Resultados Clave](#-dataset)
+6. [Dataset](#-dataset)
+7. [Licencia](#-dataset)
 ---
 
 ### Descripción del problema
@@ -53,7 +54,7 @@ El proyecto utiliza una combinación estratégica de algoritmos para extraer dif
 | Métrica | K-Means (k=2) | DBSCAN | PCA | t-SNE
 | :--- | :--- | :--- | :--- | :--- |
 | **Rol Principal** | Segmentación | Detección de anomalías | Visualización/Reducción | Validación visual |
-| **Silhouette Score** | 0.4833  | **0.5328** ★  | -- | -- | 
+| **Silhouette Score** | 0.4833  | 0.5328   | -- | -- | 
 | **Davies-Bouldin** | 2 clusters  | 2 clusters + 31 outliers  | 91.3% var. explicada | Grupos bien separados | 
 
 ---
