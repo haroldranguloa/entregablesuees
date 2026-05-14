@@ -48,6 +48,13 @@ El proyecto utiliza una combinación estratégica de algoritmos para extraer dif
 * **DBSCAN (Detección de Ruido):** A diferencia de K-Means, este modelo no obliga a todos los países a pertenecer a un grupo. Nos permitió identificar **31 países "atípicos"** que tienen comportamientos educativos únicos o extremos.
 * **PCA (Reducción de Dimensionalidad):** Logramos comprimir la información de todas las variables en solo 2 componentes principales que explican el **91.3% de la varianza**, permitiéndonos entender qué factores pesan más en la brecha educativa.
 * **t-SNE (Visualización Avanzada):** Utilizado para mapear los datos en un espacio bidimensional y confirmar visualmente que los grupos identificados por los otros algoritmos son realmente cohesivos.
+---
+## 📈 Comparativa de Métricas
+| Métrica | K-Means (k=2) | DBSCAN | PCA | t-SNE
+| :--- | :--- | :--- | :--- | :--- |
+| **Rol Principal** | Segmentación | Detección de anomalías | Visualización/Reducción | Validación visual |
+| **Silhouette Score** | 0.4833  | **0.5328** ★  | -- | -- | 
+| **Davies-Bouldin** | 2 clusters  | 2 clusters + 31 outliers  | 91.3% var. explicada | Grupos bien separados | 
 
 ---
 
